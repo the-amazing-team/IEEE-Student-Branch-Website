@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Other meta tags and links -->
+  
+  <script>
+    function smoothScroll(target) {
+      const element = document.querySelector(target);
+      const offset = 100; // Adjust the offset as needed
+  
+      window.scrollTo({
+        top: element.offsetTop - offset,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  </script>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/about-img.jpg" type="">
+
+  <title> IEEE CITNC </title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+               IEEE STUDENTS ClUB CIT-NC
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html" onclick="smoothScroll('#Home')">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#event" onclick="smoothScroll('#event')">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#know"></i> CIT-NC</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#roles"></i> Roles</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section id="Home" class="slider_section ">
+      <div class="slider_bg_box">
+        <img src="images/slider-bg.jpg" alt="">
+      </div>
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                    <h1>
+                      Welcome to <br>
+                      IEEE Club CITNC 
+                    </h1>
+                    <p>
+                      
+                      Join our vibrant IEEE club at Cambridge Institute of Technology North Campus, where innovation meets community! Explore cutting-edge technology, collaborate on exciting projects, and ignite your passion for engineering and beyond.
+                      <br><br>
+                    </p>
+                    <div class="btn-box">
+                      <a href="#" class="btn1">
+                        Register
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                    <h1>
+                      Check Out Our <br>
+                      Latest Events
+                    </h1>
+                    <p>
+                      Stay tuned for our dynamic IEEE club events at Cambridge Institute of Technology North Campus, where knowledge meets excitement! From workshops to hackathons, we're shaping the future of technology together. Don't miss out, join us!
+                      <br><br>
+                    </p>
+                    <div class="btn-box">
+                      <a href="#event" class="btn1">
+                        Events
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 ">
+                  <div class="detail-box">
+                    <h1>
+                      Know Who We are <br>
+                      and our achivements
+                    </h1>
+                    <p>
+                      Discover the essence of our IEEE club at Cambridge Institute of Technology North Campus, where dedication drives success! Explore our journey, delve into our achievements, and witness the impact we've made in the realm of technology and beyond. Join us as we continue to push boundaries and shape the future.
+                    </p>
+                    <div class="btn-box">
+                      <a href="#about" class="btn1">
+                        About
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+<!-- events section -->
+
+<section id="event" class="service_section layout_padding">
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container">
+        <h2>
+          IEEE <span>Events</span>
+        </h2>
+        <p>
+          Stay tuned for exciting upcoming events!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Artificial Intelligence
+              </h5>
+              <p>
+                Join us for an immersive workshop on the latest trends in Artificial Intelligence.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Cybersecurity Conference
+              </h5>
+              <p>
+                Explore the world of cybersecurity and learn how to safeguard digital assets.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Robotics Competition
+              </h5>
+              <p>
+                Compete against the best and showcase your skills in our robotics competition.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Guest Lecture Series
+              </h5>
+              <p>
+                Gain insights from industry experts in our exclusive guest lecture series.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service_container">
+    <div class="container ">
+      <div class="heading_container">
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s5.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Hackathon Event
+              </h5>
+              <p>
+                Participate in our hackathon event and bring your innovative ideas to life.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s6.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Tech Expo 2024
+              </h5>
+              <p>
+                Witness groundbreaking innovations at our Tech Expo 2024.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                AI & Robotics Symposium
+              </h5>
+              <p>
+                Engage in insightful discussions on AI and robotics at our symposium.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s4.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Tech Talk Series
+              </h5>
+              <p>
+                Expand your knowledge with our Tech Talk Series featuring industry leaders.
+              </p>
+              <a href="#">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end service section -->
+
+
+
+  <!-- about section -->
+
+  <section id="about" class="about_section layout_padding-bottom">
+    <div class="container  ">
+      <br><br>
+      <br><br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2><br><br>
+                About <span>Us</span>
+                <br><br>
+              </h2>
+            </div>
+            <p>
+              Here at Cambridge Institute of Technology North Campus, our students are the epitome of innovation and excellence. 
+              With a relentless pursuit of knowledge and a drive for success, we have forged our path in the world of technology. 
+              <br><br>From conquering hackathons and securing prestigious awards to our unwavering commitment to personal and professional growth, we embody the spirit of ingenuity. 
+              <br><br>As passionate individuals with a collective vision, we aspire to lead and inspire within the IEEE community. Join us on our journey as we continue to push boundaries, 
+              shape the future, and make a lasting impact in the world of technology.<br><br><br><br>
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+          <br><br>
+          <br><br>
+        </div>
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- track section -->
+
+  <section id="know" class="track_section layout_padding">
+    <div class="track_bg_box">
+      <img src="images/track-bg.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="heading_container">
+            <h2>
+              Everyting about CITNC
+            </h2>
+          </div>
+          <p>
+            Cambridge Institute of Technology – North Campus, located in Bangalore, is a symbol of academic excellence and innovation. Our campus, nestled amidst serene surroundings off the International Airport road, provides an ideal environment for learning. With state-of-the-art infrastructure and a team of highly experienced faculty, we offer a transformative educational experience to our students.
+<br><br>
+We take pride in our diverse student body and our unique industry-academic approach, which fosters collaboration and innovation. Our guiding philosophy revolves around nurturing future-ready entrepreneurs who are dedicated to global sustainability through technology and research. This commitment has earned us recognition, including accolades such as the Most Promising Student Branch award by IEEE Bangalore Section and the Best Emerging Engineering College in India – South 2018.
+<br><br>
+Accredited by AICTE and affiliated with VTU, our institution offers courses in Computer Science & Engineering, Electronics & Communication Engineering, and Mechanical Engineering. These programs empower students to excel in the ever-evolving technological landscape.
+<br><br>
+With a robust placement program and over 150 placement partners, we ensure more than 90% placements for our eligible students. This underscores our reputation as a premier institution for holistic education and career development. At Cambridge Institute of Technology – North Campus, we are dedicated to shaping the future leaders of tomorrow.
+          </p>
+          <form action="https://northcampus.cambridge.edu.in/">
+            <button type="submit">
+              Cambridge Institute of Technology North offical - website
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+  </section>
+
+  <!-- end track section -->
+
+  <!-- client section -->
+
+  <section id="roles" class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Roles at<span> IEEE</span>
+        </h2>
+      </div>
+      <div class="client_container">
+        <div class="carousel-wrap ">
+          <div class="owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Rahul Raj, the IEEE Chairman, is a dynamic individual with a passion for technology and innovation. With a background in web development and a keen interest in digital experiences, he brings a wealth of knowledge and expertise to his role. Rahul's impressive track record in coding competitions and hackathons reflects his commitment to excellence and continuous learning. As a leader, he fosters collaboration and drives success, as evidenced by his numerous achievements and accolades in various tech events and projects. With his vision and dedication, Rahul is poised to lead the IEEE chapter to new heights of success and impact.
+                    <br><br>
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="images/Rahul.png" alt="" class="img-1">
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Rahul Raj
+                    </h6>
+                    <p>
+                      Chairman
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Sairaj Todkar, a proficient problem solver in the field of Computer Science and Engineering, is renowned for his innovative thinking and exceptional ability to identify problem statements. His contributions have been instrumental in various prestigious events and competitions, including Cambrian House of Student Startups 2023 (CHOSS), TIFAC Technology Vision 2043, and AT Makeathon at Shaastra 2023, IIT Madras. He also achieved recognition in events such as Code Debug Competition at Oxignite2k23 and Idea Presentation at IEEE RLJIT. His dedication and talent have earned him accolades such as  TIFAC at IISc Bangalore and CHOSS 2023.
+                    <br><br>
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="images/sairaj.png" alt="" class="img-1">
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Sairaj Todkar
+                    </h6>
+                    <p>
+                      Vice ChairMan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Gowrish H B is a versatile professional with expertise in product design and development, particularly in the realm of computer hardware. His proficiency extends beyond hardware to encompass coding and DevOps practices, showcasing a comprehensive understanding of technology. As the founder of Hell Craft Network, a Minecraft server company, Gowrish leverages his skills to provide users with an immersive gaming experience. With an in-depth knowledge of computer building and adeptness in Minecraft server management and deployment using DevOps methodologies, Gowrish is recognized for his ability to deliver innovative solutions and ensure seamless operations in the gaming industry.                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="images/gowrish.png" alt="" class="img-1">
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Gowrish H B
+                    </h6>
+                    <p>
+                      Web Master
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  </p>
+                </div>
+                <div class="client_id">
+                  <div class="img-box">
+                    <img src="images/client-2.png" alt="" class="img-1">
+                  </div>
+                  <div class="name">
+                    <h6>
+                      Adipiscing
+                    </h6>
+                    <p>
+                      Magna
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          -->
+          </div>
+          <br><br><br><br><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+<section id="contact" class="contact_section">
+  <br><br><br><br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="heading_container">
+          <h2>
+            Contact Us
+          </h2>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-5 offset-md-1">
+        <div class="form_container contact-form">
+          <form action="https://formsubmit.co/gowrishhb5@gmail.com" method="POST">
+            <div>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <br>
+            <div>
+              <input type="text" name="phone" placeholder="Phone Number" />
+            </div>
+            <br>
+            <div>
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <br>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <br>
+            <div class="btn_box">
+              <button type="submit">SEND</button>
+            </div>
+            <br><br><br><br>
+            <!-- Add a hidden field for specifying your email address -->
+            <input type="hidden" name="_next" value="your-thank-you-page-url.html" />
+          </form>
+        </div>
+      </div>
+      
+      <div class="col-lg-7 col-md-6 px-0">
+        <div class="map_container">
+          <div class="map">
+            <div id="googleMap"></div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+  <!-- info section -->
+
+  <section id="info" class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/dba2b927a88ac1c7">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call :<br>
+                  Chairman : +91 80020 30975<br>
+                  ViceChair : +91 96324 52263<br>
+                  WebMaster : +91 63611 84577<br>
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  gowrishhb5@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div id="pti"class="info_social">
+            <a href="#home">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#about">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#Services">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Our IEEE club, led by Chairman Rahul Raj, boasts a diverse team of tech enthusiasts. Sairaj Todkar's problem-solving prowess and Gowrish H B's expertise in hardware and gaming technology drive our innovative projects and events forward.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+
+              <a class="" href="#event">
+                <img src="images/nav-bullet.png" alt="">
+                Events
+              </a>
+
+              <a class="" href="#about">
+                <img src="images/nav-bullet.png" alt="">
+                About
+              </a>
+
+              <a class="" href="#event">
+                <img src="images/nav-bullet.png" alt="">
+                CITNC
+              </a>
+
+              <a class="" href="#event">
+                <img src="images/nav-bullet.png" alt="">
+                IEEE Roles
+              </a>
+              
+              <a class="" href="#contact">
+                <img src="images/nav-bullet.png" alt="">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">CIT-NC IEEE Club ChairMan</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
