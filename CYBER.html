@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Other meta tags and links -->
+  
+  <script>
+    function smoothScroll(target) {
+      const element = document.querySelector(target);
+      const offset = 100; // Adjust the offset as needed
+  
+      window.scrollTo({
+        top: element.offsetTop - offset,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  </script>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/about-img.jpg" type="">
+
+  <title> IEEE CITNC </title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .image-wrapper {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .custom_nav-container {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding drop-down shadow */
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure the navbar is on top of other content */
+            background-color: white; /* Ensure the navbar background is white */
+            border-radius: 15px; /* Adding rounded corners to the navbar */
+            overflow: hidden; /* Hide any overflowing content */
+        }
+        .custom_nav-container .navbar-nav .nav-item .nav-link {
+            border-radius: 15px; /* Adding rounded corners to the navbar links */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section" >
+          <div class="header_bottom">
+            <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    ‎‎ ‎ ‎ IEEE STUDENTS ClUB CIT-NC
+                  </span>
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html" onclick="smoothScroll('#Home')">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#event" onclick="smoothScroll('#event')">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#know"></i> CIT-NC</a>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#roles"></i> Roles</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    
+                    
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <!-- end header section -->
+    <div id="image-gallery"></div>
+
+    <script>
+        // Image URLs provided beforehand
+        const imageUrls = [
+            'pdf/images/Cybersecurity/Cybersecurity_page-0001.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0002.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0003.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0004.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0005.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0006.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0007.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0008.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0009.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0010.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0011.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0012.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0013.jpg',
+            'pdf/images/Cybersecurity/Cybersecurity_page-0014.jpg',
+        ];
+
+        // Function to add images to the gallery
+        function addImages() {
+            const gallery = document.getElementById('image-gallery');
+            imageUrls.forEach(function(url) {
+                const wrapper = document.createElement('div');
+                wrapper.classList.add('image-wrapper');
+                const img = document.createElement('img');
+                img.src = url;
+                wrapper.appendChild(img);
+                gallery.appendChild(wrapper);
+            });
+        }
+
+        // Call the function to add images when the page loads
+        window.addEventListener('load', addImages);
+    </script>
+</body>
+</html>
